@@ -1121,30 +1121,37 @@ function shareImageDirect() {
   closeShareModal();
   showToast('이미지를 준비 중입니다...');
 
-  fetch(CARD_IMAGE_URL)
+  fetch(CARD_IMAGE_URL, { mode: 'cors' })
     .then(res => {
       if (!res.ok) throw new Error('fetch failed');
       return res.blob();
     })
     .then(blob => {
-      const file = new File([blob], CARD_IMAGE_FILENAME, { type: 'image/jpeg' });
-
-      
+      const jpgBlob = blob.type.startsWith('image/')
+        ? blob
+        : new Blob([blob], { type: 'image/jpeg' });
+      const file = new File([jpgBlob], CARD_IMAGE_FILENAME, { type: 'image/jpeg' });
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
         return navigator.share({
           files: [file],
           title: SHARE_TITLE,
           text: SHARE_TEXT
-        }).catch(() => fallbackDownload(blob)); 
+        }).catch(() => fallbackDownload(jpgBlob));
       } else {
-        
-        fallbackDownload(blob);
+        fallbackDownload(jpgBlob);
       }
     })
     .catch(() => {
-      
-      window.open(CARD_IMAGE_URL, '_blank');
-      showToast('이미지를 새 탭에서 저장하세요');
+      const a = Object.assign(document.createElement('a'), {
+        href: CARD_IMAGE_URL,
+        download: CARD_IMAGE_FILENAME,
+        target: '_blank',
+        rel: 'noopener'
+      });
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      showToast('다운로드가 시작됩니다. 저장되지 않으면 길게 눌러 저장하세요.');
     });
 }
 
@@ -1177,16 +1184,29 @@ function fallbackDownload(blob) {
 }
 
 function downloadCardImage() {
-  showToast('이미지를 준비 중입니다...');
-  fetch(CARD_IMAGE_URL)
+  showToast('이미지를 저장합니다...');
+  fetch(CARD_IMAGE_URL, { mode: 'cors' })
     .then(res => {
       if (!res.ok) throw new Error('fetch failed');
       return res.blob();
     })
-    .then(blob => fallbackDownload(blob))
+    .then(blob => {
+      const jpgBlob = blob.type.startsWith('image/')
+        ? blob
+        : new Blob([blob], { type: 'image/jpeg' });
+      fallbackDownload(jpgBlob);
+    })
     .catch(() => {
-      window.open(CARD_IMAGE_URL, '_blank');
-      showToast('이미지를 새 탭에서 저장하세요');
+      const a = Object.assign(document.createElement('a'), {
+        href: CARD_IMAGE_URL,
+        download: CARD_IMAGE_FILENAME,
+        target: '_blank',
+        rel: 'noopener'
+      });
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      showToast('다운로드가 시작됩니다. 저장되지 않으면 길게 눌러 저장하세요.');
     });
 }
 
@@ -1283,3 +1303,4 @@ function runCalc() {
 
 </body>
 </html>
+
