@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>김한수 | BYD 일산전시장</title>
+
+  
+  <meta property="og:type"        content="profile" />
+  <meta property="og:title"       content="김한수 대리 | BYD Ilsan" />
+  <meta property="og:description" content="010-7429-1521" />
+  <meta property="og:image"       content="https://raw.githubusercontent.com/bydilsansm/bydilsansm/main/BYD-KHS-namecard.jpg" />
+  <meta property="og:image:width"  content="1024" />
+  <meta property="og:image:height" content="595" />
+  <meta property="og:image:alt"    content="김한수 대리 명함 | BYD Auto 일산전시장" />
+  
+  <meta name="theme-color" content="#3753B1" />
+
+  
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=distance,laptop_car" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent; 
+    }
+
+    
+    :root {
+      --card-bg:    #e2e3e5; 
+      --text-main:  #4e5356; 
+      --text-mute:  #7a8080; 
+      --accent-deep: #3753b1; 
+      --accent-light:#4f9edd; 
+      --paper:      #efefef;
+      --btn-bg:     #e2e3e5; 
+      --paper-soft: #f8f9fa; 
+    }
+
+    html, body {
+      background: var(--paper-soft);
+    }
+
+    body {
+      
+      font-family: "Source Sans Pro", "Pretendard", -apple-system, sans-serif;
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 14px 14px 60px; 
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased; 
+    }
+
+    
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    
+    .business-card {
+      position: relative;
+      background: var(--card-bg);
+      aspect-ratio: 1.72 / 1; 
+      width: 100%;
+      border-radius: 14px;
+      box-shadow:
+        0 26px 40px -12px rgba(0,0,0,0.22),
+        0 12px 18px -6px  rgba(0,0,0,0.14),
+        0 1px 0 0 rgba(255,255,255,0.6) inset; 
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 1px solid rgba(0,0,0,0.05);
+      animation: cardIn 0.7s cubic-bezier(0.2,0.8,0.2,1) both; 
+    }
+
+    
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(12px) scale(0.98); }
+      to   { opacity: 1; transform: translateY(0)    scale(1);    }
+    }
+
+    
+    .business-card::before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent-deep), var(--accent-light));
+      pointer-events: none;
+    }
+
+    
+    .brand-logo-area {
+      position: absolute;
+      top: 12%; right: 6%;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .byd-logo-img {
+      width: clamp(95px, 22vw, 125px); 
+      height: auto;
+      display: block;
+      opacity: 0.9;
+    }
+
+    
+    .card-content {
+      position: absolute;
+      left: 6%; right: 6%; bottom: 11%;
+      z-index: 2;
+    }
+
+    
+    .name-line {
+      font-weight: 700;
+      font-size: clamp(20px, 4.8vw, 26px);
+      margin-bottom: 5px;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    
+    .name-line span.title {
+      font-size: 0.52em;
+      font-weight: 600;
+      color: var(--text-mute);
+    }
+
+    
+    .sub-title-line,
+    .showroom-line,
+    .info-line {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 400;
+      font-size: clamp(13px, 2.9vw, 15.6px);
+      color: var(--text-mute);
+      margin-bottom: 2.7px;
+      letter-spacing: 0.01em;
+      line-height: 1.28;
+    }
+
+    
+    .info-line.phone-bold {
+      font-weight: 800;
+      color: var(--text-main);
+      font-size: clamp(17px, 3vw, 16px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    
+    .section {
+      background: var(--btn-bg);
+      border-radius: 16px;
+      padding: 18px 16px;
+      margin-bottom: 14px;
+      border: 1px solid #e2e2e2;
+      box-shadow: 0 10px 20px -6px rgba(0,0,0,0.12);
+    }
+
+    
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-mute);
+      letter-spacing: 0.1em;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    
+    .cta-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    
+    .cta-button {
+      padding: 15px 12px;
+      border-radius: 12px;
+      border: none;
+      font-family: inherit;
+      font-size: 17px; 
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: transform 0.12s ease, background 0.2s ease, box-shadow 0.2s ease;
+      letter-spacing: -0.01em;
+    }
+
+    .cta-button:active {
+      transform: scale(0.97);
+    }
+
+    
+    .cta-primary {
+      background: var(--accent-deep);
+      color: #ffffff;
+      box-shadow: 0 10px 22px -4px rgba(55,83,177,0.45);
+    }
+
+    
+    .cta-secondary {
+      background: var(--btn-bg);
+      color: var(--accent-deep);
+      border: 1.5px solid var(--accent-deep);
+      box-shadow: 0 10px 20px -6px rgba(0,0,0,0.15);
+    }
+
+    
+    .action-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 8px;
+    }
+
+    
+    .action-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 4px 12px;
+      border-radius: 12px;
+      background: #ffffff;
+      cursor: pointer;
+      transition: transform 0.1s ease, background 0.2s ease;
+      border: none;
+      color: inherit;
+      text-decoration: none;
+      font-family: inherit;
+      box-shadow: 0 4px 10px -2px rgba(0,0,0,0.1);
+    }
+
+    .action-item:active {
+      transform: scale(0.95);
+      background: #edf0f2;
+    }
+
+    
+    .action-icon {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    
+    .action-badge {
+      width: 31px;
+      height: 31px;
+      margin-bottom: 7px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 20.3px;
+    }
+
+    
+    .action-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-main);
+      text-align: center;
+      line-height: 1.25;
+    }
+
+    
+    .map-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px;
+      background: #ffffff;
+      border-radius: 12px;
+      margin-top: 4px;
+      box-shadow: 0 4px 10px -2px rgba(0,0,0,0.08);
+    }
+
+    
+    .map-pin {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    
+    .map-pin .material-symbols-outlined {
+      font-size: 36px;
+      color: #4e5356;
+      line-height: 1;
+    }
+
+    .map-text strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0px;
+      line-height: 1.1;
+    }
+
+    .map-text span {
+      color: var(--text-mute);
+      font-size: 12px;
+      line-height: 1.1;
+    }
+      margin-bottom: 1px; 
+    }
+
+    
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 1100;
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-overlay.show {
+      display: flex;
+      animation: fadeIn 0.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    
+    .modal {
+      background: var(--paper-soft);
+      width: 100%;
+      max-width: 480px;
+      border-radius: 22px 22px 0 0;
+      padding: 22px 20px 28px;
+      animation: slideUp 0.3s cubic-bezier(0.2,0.8,0.2,1);
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to   { transform: translateY(0); }
+    }
+
+    
+    .modal-grip {
+      width: 40px;
+      height: 4px;
+      background: #ddd;
+      border-radius: 2px;
+      margin: 0 auto 18px;
+    }
+
+    .modal-title {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .modal-desc {
+      font-size: 13px;
+      color: var(--text-mute);
+      margin-bottom: 18px;
+      letter-spacing: -0.005em;
+      line-height: 1.5;
+    }
+
+    .modal-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    
+    .modal-item {
+      padding: 14px;
+      border-radius: 12px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-family: inherit;
+      transition: background 0.15s ease;
+      box-shadow: 0 2px 8px -2px rgba(0,0,0,0.07);
+    }
+
+    .modal-item:active { background: #edf0f2; }
+
+    .modal-item-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-item-text { flex: 1; }
+
+    .modal-item-text strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 2px;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+    }
+
+    .modal-item-text span {
+      font-size: 12px;
+      color: var(--text-mute);
+      letter-spacing: -0.005em;
+    }
+
+    .modal-close {
+      width: 100%;
+      margin-top: 14px;
+      padding: 14px;
+      background: transparent;
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-mute);
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    
+    .footer {
+      text-align: center;
+      padding: 32px 0 10px;
+      font-size: 14px;
+      color: #bbb;
+      letter-spacing: 0.15em;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    
+    .toast {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #222;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 32px;
+      font-size: 13px;
+      font-weight: 600;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.2,0.8,0.2,1);
+      z-index: 1000;
+      pointer-events: none; 
+      box-shadow: 0 12px 32px -8px rgba(0,0,0,0.4);
+      letter-spacing: -0.01em;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0); 
+    }
+
+    
+    .floating-call {
+      position: fixed;
+      right: 18px; bottom: 24px;
+      width: 58px; height: 58px;
+      border-radius: 50%;
+      border: none;
+      background: linear-gradient(135deg, #3753b1, #4f9edd);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 14px 28px rgba(55,83,177,0.35);
+      z-index: 999;
+      cursor: pointer;
+    }
+
+    .floating-call:active {
+      transform: scale(0.94);
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  
+  <div class="business-card" id="business-card">
+
+    
+    <div class="brand-logo-area">
+      <img src="byd-logo.png" alt="BYD Logo" class="byd-logo-img" />
+    </div>
+
+    
+    <div class="card-content">
+      <div class="name-line">
+        김 한 수
+        <span class="title">대리</span>
+      </div>
+      <div class="sub-title-line">Sales | Manager</div>
+      <div class="showroom-line">BYD Ilsan Showroom</div>
+      <div class="info-line">경기 고양시 일산동구 백마로 516</div>
+      <div class="info-line">hansoo.kim@dtnetworks.co.kr</div>
+      <div class="info-line phone-bold">010 - 7429 - 1521</div>
+    </div>
+  </div>
+
+  
+  <div class="cta-row">
+    
+    <button class="cta-button cta-secondary" onclick="window.open('tel:01074291521')">
+      <svg width="20" height="20" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                 a19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67
+                 A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72
+                 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91
+                 a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45
+                 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      통화하기
+    </button>
+
+    
+    <button class="cta-button cta-secondary" onclick="saveContact()">
+      <svg width="20" height="20" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+        <line x1="20" y1="8" x2="20" y2="14"/>
+        <line x1="23" y1="11" x2="17" y2="11"/>
+      </svg>
+      연락처 저장
+    </button>
+  </div>
+
+  
+  <div class="cta-row" style="grid-template-columns:1fr;">
+    <button class="cta-button cta-primary" onclick="downloadCardImage()">
+      <span class="material-icons-outlined"
+            style="font-size:27px;color:#ffffff;line-height:1;">save</span>
+      명함 이미지로 저장
+    </button>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-title">e-Catalog</div>
+
+    <div class="action-grid" style="grid-template-columns:repeat(2,1fr); gap:10px;">
+      <button class="action-item"
+              onclick="window.open('https://www.bydauto.kr/static/file/BYD_DOLPHIN_Catalog.pdf','_blank')">
+        <span class="action-label" style="font-size:18px;font-weight:700;">DOLPHIN</span>
+      </button>
+
+      <button class="action-item"
+              onclick="window.open('https://www.bydauto.kr/static/file/BYD_ATTO_3_Catalog.pdf','_blank')">
+        <span class="action-label" style="font-size:18px;font-weight:700;">ATTO3</span>
+      </button>
+
+      <button class="action-item"
+              onclick="window.open('https://www.bydauto.kr/static/file/seal_catalog.pdf','_blank')">
+        <span class="action-label" style="font-size:18px;font-weight:700;">SEAL</span>
+      </button>
+
+      <button class="action-item"
+              onclick="window.open('https://www.bydauto.kr/static/file/BYD_SEALION_7_Catalog.pdf','_blank')">
+        <span class="action-label" style="font-size:18px;font-weight:700;">SEALION7</span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div style="background:#111111;border-radius:16px;padding:20px 16px 0;margin-bottom:14px;overflow:hidden;box-shadow:0 10px 20px -6px rgba(0,0,0,0.22);">
+
+    
+    <div style="text-align:center;padding-bottom:16px;">
+      <span style="font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:17px;font-weight:700;color:#ffffff;letter-spacing:-0.02em;">
+        ICE와 EV 유지·관리비 비교
+      </span>
+      <span style="font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:11px;color:#999999;margin-left:6px;letter-spacing:-0.01em;">
+        (연 25,000Km 주행 기준)
+      </span>
+    </div>
+
+    
+    <table style="width:100%;border-collapse:collapse;font-family:'Pretendard','Source Sans Pro',sans-serif;">
+      <thead>
+        <tr>
+          <th style="background:#686D71;color:#ffffff;font-size:13px;font-weight:700;padding:10px 8px;text-align:center;border:1px solid #333;width:36%;">비교항목</th>
+          <th style="background:#686D71;color:#ffffff;font-size:13px;font-weight:700;padding:10px 8px;text-align:center;border:1px solid #333;width:32%;">ICE</th>
+          <th style="background:#686D71;color:#ffffff;font-size:13px;font-weight:700;padding:10px 8px;text-align:center;border:1px solid #333;width:32%;">EV</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color:#cccccc;font-size:12px;padding:10px 8px;text-align:center;border:1px solid #333;">연간 자동차세</td>
+          <td style="color:#aaaaaa;font-size:12px;padding:10px 8px;text-align:right;border:1px solid #333;">290,000 원</td>
+          <td style="color:#4f9edd;font-size:12px;font-weight:700;padding:10px 8px;text-align:right;border:1px solid #333;">130,000 원</td>
+        </tr>
+        <tr>
+          <td style="color:#cccccc;font-size:12px;padding:10px 8px;text-align:center;border:1px solid #333;">연간 연료/충전비</td>
+          <td style="color:#aaaaaa;font-size:12px;padding:10px 8px;text-align:right;border:1px solid #333;">약 3,900,000 원</td>
+          <td style="color:#4f9edd;font-size:12px;font-weight:700;padding:10px 8px;text-align:right;border:1px solid #333;">약 1,500,000 원</td>
+        </tr>
+        <tr>
+          <td style="color:#cccccc;font-size:12px;padding:10px 8px;text-align:center;border:1px solid #333;">연간 소모품 교체비</td>
+          <td style="color:#aaaaaa;font-size:12px;padding:10px 8px;text-align:right;border:1px solid #333;">약 450,000 원</td>
+          <td style="color:#4f9edd;font-size:12px;font-weight:700;padding:10px 8px;text-align:right;border:1px solid #333;">약 30,000 원</td>
+        </tr>
+        <tr>
+          <td style="color:#cccccc;font-size:12px;padding:10px 8px;text-align:center;border:1px solid #333;">취득세 지원</td>
+          <td style="color:#aaaaaa;font-size:12px;padding:10px 8px;text-align:right;border:1px solid #333;">혜택없음</td>
+          <td style="color:#4f9edd;font-size:12px;font-weight:700;padding:10px 8px;text-align:right;border:1px solid #333;">- 1,400,000 원</td>
+        </tr>
+        <tr>
+          <td style="color:#cccccc;font-size:12px;padding:10px 8px;text-align:center;border:1px solid #333;">공영주차장 할인</td>
+          <td style="color:#aaaaaa;font-size:12px;padding:10px 8px;text-align:right;border:1px solid #333;">혜택없음</td>
+          <td style="color:#4f9edd;font-size:12px;font-weight:700;padding:10px 8px;text-align:right;border:1px solid #333;">50% 할인</td>
+        </tr>
+        <tr>
+          <td style="color:#cccccc;font-size:12px;padding:10px 8px;text-align:center;border:1px solid #333;">고속도로 통행료 할인</td>
+          <td style="color:#aaaaaa;font-size:12px;padding:10px 8px;text-align:right;border:1px solid #333;">혜택없음</td>
+          <td style="color:#4f9edd;font-size:12px;font-weight:700;padding:10px 8px;text-align:right;border:1px solid #333;">30% 할인</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+    <div style="background:#3753b1;margin:0 -16px;padding:16px 20px;text-align:center;">
+      <div style="font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:12px;color:#ffffff;margin-bottom:6px;letter-spacing:-0.01em;">5년 보유 시 총 절감 예상액</div>
+      <div style="font-family:'Pretendard','Source Sans Pro',sans-serif;color:#ffffff;letter-spacing:-0.02em;display:flex;align-items:baseline;justify-content:center;gap:4px;">
+        <span style="font-size:13px;font-weight:400;">약</span>
+        <span style="font-size:28px;font-weight:800;">14,900,000</span>
+        <span style="font-size:13px;font-weight:400;">원</span>
+        <span style="font-size:28px;font-weight:800;">+ α</span>
+      </div>
+    </div>
+
+    
+    <div style="text-align:center;padding:10px 0 12px;">
+      <span style="font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:10px;color:#666666;">상기 이미지 및 내용은 실제 판매차량과 상이할 수 있습니다.</span>
+    </div>
+  </div>
+
+  
+  <style>
+    .calc-label {
+      font-size: clamp(10px, 2.5vw, 11px);
+      font-weight: 600;
+      color: #555;
+      font-family: 'Pretendard','Source Sans Pro',sans-serif;
+      margin-bottom: 4px;
+      display: block;
+    }
+    .calc-input {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: clamp(6px, 2vw, 9px) clamp(7px, 2vw, 10px);
+      font-size: clamp(11px, 3vw, 13px);
+      font-family: 'Pretendard','Source Sans Pro',sans-serif;
+      color: #333;
+      outline: none;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+    }
+    .calc-input:focus { border-color: #80c9ff; }
+    .calc-select {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: clamp(6px, 2vw, 9px) clamp(7px, 2vw, 10px);
+      font-size: clamp(11px, 3vw, 13px);
+      font-family: 'Pretendard','Source Sans Pro',sans-serif;
+      color: #333;
+      outline: none;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    .period-btn {
+      flex: 1;
+      padding: clamp(6px, 2vw, 9px) 0;
+      border: 1.5px solid #ddd;
+      border-radius: 8px;
+      background: #fff;
+      font-size: clamp(11px, 3vw, 13px);
+      font-family: 'Pretendard','Source Sans Pro',sans-serif;
+      color: #555;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-weight: 600;
+    }
+    .period-btn.active {
+      background: #3753b1;
+      color: #fff;
+      border-color: #3753b1;
+    }
+    .calc-th {
+      padding: clamp(5px,1.5vw,8px);
+      font-size: clamp(10px,2.5vw,12px);
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    .calc-td-label {
+      padding: clamp(5px,1.5vw,8px);
+      font-size: clamp(10px,2.5vw,11px);
+      color: #555;
+      font-family: 'Pretendard','Source Sans Pro',sans-serif;
+    }
+    .calc-td {
+      padding: clamp(5px,1.5vw,8px);
+      font-size: clamp(10px,2.5vw,11px);
+      text-align: right;
+      font-family: 'Pretendard','Source Sans Pro',sans-serif;
+      white-space: nowrap;
+    }
+  </style>
+
+  <div style="margin-bottom:14px;">
+    <button id="calc-toggle" onclick="toggleCalc()"
+            style="width:100%;background:#80c9ff;border:none;border-radius:16px;padding:16px 20px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;box-shadow:0 10px 20px -6px rgba(128,201,255,0.35);font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:17px;font-weight:700;color:#ffffff;letter-spacing:-0.02em;">
+      <span class="material-symbols-outlined" style="font-size:27px;color:#ffffff;line-height:1;">laptop_car</span>
+      전기차 전환비용 계산기
+      <span id="calc-arrow" style="font-size:18px;transition:transform 0.3s;">▾</span>
+    </button>
+
+    <div id="calc-panel" style="display:none;background:#ffffff;border-radius:0 0 16px 16px;padding:16px 14px 16px;box-shadow:0 10px 20px -6px rgba(0,0,0,0.10);border:1px solid #e0e0e0;border-top:none;">
+      <p style="font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:11px;color:#999;text-align:center;margin-bottom:14px;">현재 차량 정보를 입력하고 BYD 전기차 전환 시 절감 비용을 확인하세요.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">
+        <div><label class="calc-label">배기량 (cc)</label><input id="c-cc" class="calc-input" type="number" inputmode="numeric" placeholder="예) 2000"/></div>
+        <div><label class="calc-label">연비 (km/L)</label><input id="c-mpg" class="calc-input" type="number" inputmode="decimal" placeholder="예) 12"/></div>
+        <div><label class="calc-label">연료 단가 (원/L)</label><input id="c-fuel" class="calc-input" type="number" inputmode="numeric" placeholder="예) 1650"/></div>
+        <div><label class="calc-label">연간 주행거리 (km)</label><input id="c-km" class="calc-input" type="number" inputmode="numeric" placeholder="예) 20000"/></div>
+      </div>
+
+      <div style="margin-bottom:8px;">
+        <label class="calc-label">BYD 모델 선택</label>
+        <select id="c-model" class="calc-select">
+          <option value="dolphin">BYD DOLPHIN</option>
+          <option value="dolphin_active">BYD DOLPHIN Active</option>
+          <option value="atto3">BYD ATTO 3</option>
+          <option value="seal">BYD SEAL</option>
+          <option value="seal_plus">BYD SEAL PLUS</option>
+          <option value="seal_awd">BYD SEAL AWD</option>
+          <option value="sealion7">BYD SEALION 7</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom:14px;">
+        <label class="calc-label">비교 기간</label>
+        <div style="display:flex;gap:6px;">
+          <button class="period-btn" data-year="1" onclick="setPeriod(1)">1년</button>
+          <button class="period-btn" data-year="3" onclick="setPeriod(3)">3년</button>
+          <button class="period-btn active" data-year="5" onclick="setPeriod(5)">5년</button>
+        </div>
+      </div>
+
+      <button onclick="runCalc()"
+              style="width:100%;background:#3753b1;color:#fff;border:none;border-radius:10px;padding:12px;font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:clamp(13px,3.5vw,15px);font-weight:700;cursor:pointer;letter-spacing:-0.01em;">
+        유지비 절감액 확인
+      </button>
+
+      <div id="calc-result" style="display:none;margin-top:14px;">
+        <div style="background:#3753b1;border-radius:12px;padding:14px;text-align:center;margin-bottom:12px;">
+          <div id="res-period" style="font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:11px;color:#aac4ff;margin-bottom:3px;"></div>
+          <div style="font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:11px;color:#ccdeff;margin-bottom:5px;">총 절감 예상액</div>
+          <div id="res-total" style="font-family:'Pretendard','Source Sans Pro',sans-serif;font-size:clamp(20px,5vw,26px);font-weight:800;color:#ffffff;"></div>
+        </div>
+
+        <table style="width:100%;border-collapse:collapse;font-family:'Pretendard','Source Sans Pro',sans-serif;table-layout:fixed;">
+          <colgroup><col style="width:38%"><col style="width:31%"><col style="width:31%"></colgroup>
+          <thead>
+            <tr style="background:#f0f4ff;">
+              <th class="calc-th" style="text-align:left;color:#555;">항목</th>
+              <th class="calc-th" style="color:#555;">내 차(ICE)</th>
+              <th class="calc-th" style="color:#3753b1;">BYD EV</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #eee;">
+              <td class="calc-td-label">연간 연료·충전비</td>
+              <td id="r-ice-fuel" class="calc-td" style="color:#333;"></td>
+              <td id="r-ev-fuel"  class="calc-td" style="color:#3753b1;font-weight:700;"></td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td class="calc-td-label">자동차세+환경부담금</td>
+              <td id="r-ice-tax"  class="calc-td" style="color:#333;"></td>
+              <td id="r-ev-tax"   class="calc-td" style="color:#3753b1;font-weight:700;"></td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td class="calc-td-label">소모품 교체비</td>
+              <td id="r-ice-parts" class="calc-td" style="color:#333;"></td>
+              <td id="r-ev-parts"  class="calc-td" style="color:#3753b1;font-weight:700;"></td>
+            </tr>
+            <tr>
+              <td class="calc-td-label">취득세 감면 (1회)</td>
+              <td class="calc-td" style="color:#333;">-</td>
+              <td id="r-ev-acq"   class="calc-td" style="color:#3753b1;font-weight:700;"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style="font-size:10px;color:#bbb;margin-top:10px;font-family:'Pretendard','Source Sans Pro',sans-serif;line-height:1.6;">
+          ※ 충전비: 완속 285원/kWh 기준<br>
+          ※ 자동차세: 배기량 기준 현행법 / 환경개선부담금: 연 9만원 기준<br>
+          ※ 취득세 감면 140만원 (2026년 현행법)<br>
+          ※ 본 결과는 참고용이며 실제와 다를 수 있습니다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-title">CONTACT</div>
+
+    <div class="action-grid">
+      
+      <button class="action-item" onclick="window.open('tel:0319110940')">
+        <svg class="action-icon" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span class="action-label">전시장 전화</span>
+      </button>
+
+      
+      <button class="action-item" onclick="window.open('sms:01074291521')">
+        <span class="material-icons-outlined action-icon"
+              style="width:auto;height:auto;font-size:24px;margin-bottom:8px;">textsms</span>
+        <span class="action-label">문자 보내기</span>
+      </button>
+
+      
+      <button class="action-item" onclick="window.open('mailto:hansoo.kim@dtnetworks.co.kr')">
+        <svg class="action-icon" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        <span class="action-label">이메일</span>
+      </button>
+
+      
+      <button class="action-item" onclick="openShareModal()">
+        <svg class="action-icon" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+          <polyline points="16 6 12 2 8 6"/>
+          <line x1="12" y1="2" x2="12" y2="15"/>
+        </svg>
+        <span class="action-label">명함 공유</span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <div class="section-title">SHOWROOM LOCATION</div>
+
+    
+    <div class="map-info">
+      <div class="map-pin">
+        <span class="material-symbols-outlined">distance</span>
+      </div>
+      <div class="map-text">
+        <strong>BYD AUTO 일산전시장</strong>
+        <span>경기도 고양시 일산동구 백마로 516</span>
+      </div>
+    </div>
+
+    
+    <div class="action-grid" style="margin-top:12px; grid-template-columns:repeat(3,1fr);">
+      <button class="action-item" onclick="openTmap()">
+        <div class="action-badge" style="background:#0086FF;color:#fff;">T</div>
+        <span class="action-label">티맵</span>
+      </button>
+
+      <button class="action-item" onclick="openKakaoMap()">
+        <div class="action-badge" style="background:#FEE500;color:#111;">K</div>
+        <span class="action-label">카카오맵</span>
+      </button>
+
+      <button class="action-item" onclick="openNaverMap()">
+        <div class="action-badge" style="background:#03C75A;color:#fff;">N</div>
+        <span class="action-label">네이버맵</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="footer">BYD | DT NETWORKS | Ilsan</div>
+</div>
+
+<button class="floating-call" onclick="window.open('tel:01074291521')">☎</button>
+
+<div class="modal-overlay" id="share-modal" onclick="closeShareModal(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-grip"></div>
+    <div class="modal-title">명함 공유하기</div>
+    <div class="modal-desc">카톡·문자에서 명함이 이미지로 보이게 하려면<br>'이미지로 저장 후 전송'을 추천드립니다.</div>
+
+    <div class="modal-list">
+      
+      <button class="modal-item" onclick="shareImageDirect()">
+        <div class="modal-item-icon" style="background:#FEE500;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#1a1a1a">
+            <path d="M12 3C6.48 3 2 6.48 2 10.8c0 2.76 1.86 5.18 4.66 6.6-.2.7-.74 2.6-.84 3-.13.5.18.5.38.36.16-.1 2.54-1.74 3.56-2.42.74.1 1.5.16 2.24.16 5.52 0 10-3.48 10-7.7S17.52 3 12 3z"/>
+          </svg>
+        </div>
+        <div class="modal-item-text">
+          <strong>명함 이미지로 저장 후 전송</strong>
+          <span>가장 깔끔하게 보입니다 (권장)</span>
+        </div>
+      </button>
+
+      
+      <button class="modal-item" onclick="shareViaSystem()">
+        <div class="modal-item-icon" style="background:var(--accent-deep);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+               stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+          </svg>
+        </div>
+        <div class="modal-item-text">
+          <strong>링크로 공유</strong>
+          <span>카톡·문자·메일 등 어디든</span>
+        </div>
+      </button>
+
+      
+      <button class="modal-item" onclick="copyLink()">
+        <div class="modal-item-icon" style="background:#e2e3e5;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+               stroke="var(--accent-deep)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+          </svg>
+        </div>
+        <div class="modal-item-text">
+          <strong>링크 복사</strong>
+          <span>주소창에 붙여넣기</span>
+        </div>
+      </button>
+    </div>
+
+    <button class="modal-close" onclick="closeShareModal()">닫기</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+
+const CONTACT_INFO = {
+  firstName:  '한수',           
+  lastName:   '김',             
+  fullName:   '김한수',         
+  title:      '대리',      
+  company:    'BYD 일산전시장', 
+  mobile:     '01074291521',    
+  office:     '0319110940',     
+  email:      'hansoo.kim@dtnetworks.co.kr', 
+  address:    '경기 고양시 일산동구 백마로 516',  
+  placeQuery: 'BYD Auto 일산전시장', 
+  website:    window.location.href
+};
+
+const CARD_IMAGE_URL      = 'https://raw.githubusercontent.com/bydilsansm/bydilsansm/main/BYD-KHS-namecard.jpg';
+const CARD_IMAGE_FILENAME = '김한수_BYD명함.jpg';
+
+const SHARE_TITLE = `${CONTACT_INFO.fullName} | ${CONTACT_INFO.company}`;
+const SHARE_TEXT  = `${CONTACT_INFO.company} ${CONTACT_INFO.fullName} ${CONTACT_INFO.title} 명함`;
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(window.toastTimer);
+  window.toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function saveContact() {
+  
+  const vcfText = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'N:최;호준;;;',                                            
+    'FN:김한수',
+    'ORG:BYD Auto 일산전시장',
+    'TITLE:대리',
+    'TEL;TYPE=CELL,VOICE:010-7429-1521',                   
+    'TEL;TYPE=WORK,VOICE:031-932-9108',                    
+    'EMAIL;TYPE=WORK,INTERNET:hansoo.kim@dtnetworks.co.kr',
+    'ADR;TYPE=WORK:;;경기도 고양시 일산동구 백마로 516', 
+    'URL;TYPE=WORK:' + CONTACT_INFO.website,
+    'END:VCARD'
+  ].join('\r\n') + '\r\n';
+
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+  if (isIOS) {
+    
+    window.open('data:text/vcard;charset=utf-8,' + encodeURIComponent(vcfText), '_blank');
+  } else {
+    
+    const url = URL.createObjectURL(new Blob([vcfText], { type: 'text/vcard;charset=utf-8' }));
+    const a = Object.assign(document.createElement('a'), { href: url, download: '김한수_BYD.vcf' });
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000); 
+  }
+
+  showToast('연락처를 저장하세요 📇');
+}
+
+function copyLink() {
+  closeShareModal();
+  navigator.clipboard.writeText(window.location.href)
+    .then(() => showToast('링크가 복사되었습니다'))
+    .catch(() => showToast('복사에 실패했습니다'));
+}
+
+function tryAppLink(appUrl, fallbackUrl) {
+  const timer = setTimeout(() => { window.location.href = fallbackUrl; }, 1200);
+  window.location.href = appUrl;
+  window.addEventListener('pagehide', () => clearTimeout(timer), { once: true });
+}
+
+function openTmap() {
+  const q = encodeURIComponent(CONTACT_INFO.placeQuery);
+  tryAppLink(`tmap://search?name=${q}`, 'https://surl.tmobiapi.com/d97deca3');
+}
+
+function openKakaoMap() {
+  window.location.href = `https://map.kakao.com/link/search/${encodeURIComponent(CONTACT_INFO.placeQuery)}`;
+}
+
+function openNaverMap() {
+  const q = encodeURIComponent(CONTACT_INFO.placeQuery);
+  tryAppLink(`nmap://search?query=${q}&appname=dt.networks.card`, `https://map.naver.com/p/search/${q}`);
+}
+
+function openShareModal() {
+  document.getElementById('share-modal').classList.add('show');
+}
+
+function closeShareModal(e) {
+  
+  if (!e || e.target === e.currentTarget) {
+    document.getElementById('share-modal').classList.remove('show');
+  }
+}
+
+function shareImageDirect() {
+  closeShareModal();
+  showToast('이미지를 준비 중입니다...');
+
+  fetch(CARD_IMAGE_URL)
+    .then(res => {
+      if (!res.ok) throw new Error('fetch failed');
+      return res.blob();
+    })
+    .then(blob => {
+      const file = new File([blob], CARD_IMAGE_FILENAME, { type: 'image/jpeg' });
+
+      
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        return navigator.share({
+          files: [file],
+          title: SHARE_TITLE,
+          text: SHARE_TEXT
+        }).catch(() => fallbackDownload(blob)); 
+      } else {
+        
+        fallbackDownload(blob);
+      }
+    })
+    .catch(() => {
+      
+      window.open(CARD_IMAGE_URL, '_blank');
+      showToast('이미지를 새 탭에서 저장하세요');
+    });
+}
+
+function shareViaSystem() {
+  closeShareModal();
+  if (navigator.share) {
+    navigator.share({
+      title: SHARE_TITLE,
+      text: SHARE_TEXT,
+      url: window.location.href
+    }).catch(() => {}); 
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => showToast('링크가 복사되었습니다'))
+      .catch(() => showToast('복사에 실패했습니다'));
+  }
+}
+
+function fallbackDownload(blob) {
+  const url = URL.createObjectURL(blob);
+  const a = Object.assign(document.createElement('a'), {
+    href: url,
+    download: CARD_IMAGE_FILENAME
+  });
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  showToast('명함 이미지가 저장되었습니다');
+}
+
+function downloadCardImage() {
+  showToast('이미지를 준비 중입니다...');
+  fetch(CARD_IMAGE_URL)
+    .then(res => {
+      if (!res.ok) throw new Error('fetch failed');
+      return res.blob();
+    })
+    .then(blob => fallbackDownload(blob))
+    .catch(() => {
+      window.open(CARD_IMAGE_URL, '_blank');
+      showToast('이미지를 새 탭에서 저장하세요');
+    });
+}
+
+let calcPeriod = 5;
+
+function toggleCalc() {
+  const panel = document.getElementById('calc-panel');
+  const arrow = document.getElementById('calc-arrow');
+  const btn   = document.getElementById('calc-toggle');
+  const open  = panel.style.display === 'none';
+  panel.style.display = open ? 'block' : 'none';
+  arrow.style.transform = open ? 'rotate(180deg)' : 'rotate(0deg)';
+  btn.style.borderRadius = open ? '16px 16px 0 0' : '16px';
+}
+
+function setPeriod(y) {
+  calcPeriod = y;
+  document.querySelectorAll('.period-btn').forEach(b => {
+    b.classList.toggle('active', parseInt(b.dataset.year) === y);
+  });
+}
+
+function fmtW(n) {
+  return Math.round(n).toLocaleString('ko-KR') + '원';
+}
+function fmtMan(n) {
+  const man = Math.round(n / 10000);
+  return '약 ' + man.toLocaleString('ko-KR') + '만원';
+}
+
+function carTax(cc) {
+  if (cc <= 1000) return cc * 80;
+  if (cc <= 1600) return cc * 140;
+  return cc * 200;
+}
+
+const BYD_MODELS = {
+  dolphin:       { efficiency: 5.5 },
+  dolphin_active:{ efficiency: 5.1 },
+  atto3:         { efficiency: 4.7 },
+  seal:          { efficiency: 4.7 },
+  seal_plus:     { efficiency: 4.7 },
+  seal_awd:      { efficiency: 4.2 },
+  sealion7:      { efficiency: 4.3 },
+};
+
+const EV_TAX_YEAR       = 130000;
+const EV_ENV_YEAR       = 0;
+const ICE_ENV_YEAR      = 90000;
+const EV_ACQ            = 1400000;
+const CHARGE_RATE       = 285;
+const ICE_PARTS_PER_10K = 200000;
+const EV_PARTS_YEAR     = 25000;
+
+function runCalc() {
+  const cc    = parseFloat(document.getElementById('c-cc').value)  || 0;
+  const mpg   = parseFloat(document.getElementById('c-mpg').value) || 0;
+  const fuelP = parseFloat(document.getElementById('c-fuel').value)|| 0;
+  const km    = parseFloat(document.getElementById('c-km').value)  || 0;
+  const model = document.getElementById('c-model').value;
+  const m     = BYD_MODELS[model];
+  const period = calcPeriod;
+
+  if (!cc || !mpg || !fuelP || !km) {
+    alert('모든 항목을 입력해 주세요.'); return;
+  }
+
+  const iceFuelYear  = (km / mpg) * fuelP;
+  const evFuelYear   = (km / m.efficiency) * CHARGE_RATE;
+  const iceTaxYear   = carTax(cc) + ICE_ENV_YEAR;
+  const evTaxYear    = EV_TAX_YEAR + EV_ENV_YEAR;
+  const icePartsYear = (km / 10000) * ICE_PARTS_PER_10K;
+  const evPartsYear  = EV_PARTS_YEAR;
+
+  const fuelSaving  = (iceFuelYear  - evFuelYear)  * period;
+  const taxSaving   = (iceTaxYear   - evTaxYear)   * period;
+  const partsSaving = (icePartsYear - evPartsYear) * period;
+  const acqSaving   = EV_ACQ;
+  const total       = fuelSaving + taxSaving + partsSaving + acqSaving;
+
+  document.getElementById('res-period').textContent  = period + '년 보유 시 총 절감 예상액';
+  document.getElementById('res-total').textContent   = fmtMan(total);
+  document.getElementById('r-ice-fuel').textContent  = fmtW(iceFuelYear);
+  document.getElementById('r-ev-fuel').textContent   = fmtW(evFuelYear);
+  document.getElementById('r-ice-tax').textContent   = fmtW(iceTaxYear);
+  document.getElementById('r-ev-tax').textContent    = fmtW(evTaxYear);
+  document.getElementById('r-ice-parts').textContent = fmtW(icePartsYear);
+  document.getElementById('r-ev-parts').textContent  = fmtW(evPartsYear);
+  document.getElementById('r-ev-acq').textContent    = '- ' + fmtW(EV_ACQ);
+
+  document.getElementById('calc-result').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
